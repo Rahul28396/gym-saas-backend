@@ -1,10 +1,10 @@
 const path = require("path");
 const fs = require("fs/promises");
 
-const MEMEBRS_FILE_LOCATION = path.join("src", "config", "data", "members.json");
+const MEMBERS_FILE_LOCATION = path.join("src", "config", "data", "members.json");
 
 async function getMembers() {
-  const users = await fs.readFile(MEMEBRS_FILE_LOCATION, {
+  const users = await fs.readFile(MEMBERS_FILE_LOCATION, {
     encoding: "utf-8",
   });
 
@@ -31,7 +31,7 @@ async function removeUserById(id) {
 
 async function updateMembers(users = []) {
   console.log("No of user after update", users.length);
-  await fs.writeFile(MEMEBRS_FILE_LOCATION, JSON.stringify(users));
+  await fs.writeFile(MEMBERS_FILE_LOCATION, JSON.stringify(users));
 }
 
 module.exports = {

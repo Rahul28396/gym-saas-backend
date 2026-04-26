@@ -26,7 +26,7 @@ async function removePlan(id) {
   try {
     const plans = await getPlans();
 
-    const selectedPlan = plans.find((plan) => user._id === id);
+    const selectedPlan = plans.find((plan) => plan._id === id);
     const updatedPlans = plans.filter((plan) => plan._id !== id);
 
     await updatePlans(updatedPlans);

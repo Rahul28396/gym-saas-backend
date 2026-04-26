@@ -55,7 +55,7 @@ const updatePlanController = async (req, res) => {
   try {
     let plans = await getPlans();
     const id = Number(req.params.id); // ensure numeric comparison
-    const plan = await getplan(id);
+    const plan = await getPlan(id);
 
     if (plan) {
       const updatedFields = req.body;
@@ -79,10 +79,10 @@ const updatePlanController = async (req, res) => {
 const deletePlanController = async (req, res) => {
   try {
     const id = Number(req.params.id);
-    const plan = await removeplan(id);
+    const plan = await removePlan(id);
 
     if (!plan) {
-      return res.status(404).send({ error: "Not Plan found" });
+      return res.status(404).send({ error: "Plan not found" });
     }
 
     return res.status(200).send(plan);
