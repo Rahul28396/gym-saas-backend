@@ -1,0 +1,25 @@
+{
+  "name": "gym-saas-backend",
+  "version": "1.0.0",
+  "description": "this is the backend written on express, nodejs and typescript for gym-saas",
+  "homepage": "https://github.com/Rahul28396/gym-saas-backend#readme",
+  "bugs": {
+    "url": "https://github.com/Rahul28396/gym-saas-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahul28396/gym-saas-backend.git"
+  },
+  "license": "ISC",
+  "author": "Rahul Mondal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
