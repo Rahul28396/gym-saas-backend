@@ -1,1 +1,20 @@
-[{"_id":1,"userId":"ownerId","name":"Monthly","duration":30,"price":1000},{"_id":2,"userId":"ownerId","name":"Monthly","duration":30,"price":1000}]
+[
+  {
+    "_id": "plan_basic",
+    "name": "Basic Plan",
+    "description": "Access to gym equipment and locker room.",
+    "price": 1200,
+    "duration": 1,
+    "status": "Active",
+    "features": ["Gym Equipment", "Locker Room"]
+  },
+  {
+    "_id": "plan_premium",
+    "name": "Premium Plan",
+    "description": "Includes all basic features plus group classes and sauna.",
+    "price": 2500,
+    "duration": 3,
+    "status": "Active",
+    "features": ["Gym Equipment", "Locker Room", "Group Classes", "Sauna"]
+  }
+]
