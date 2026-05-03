@@ -2,6 +2,7 @@ import { ObjectId, WithId } from "mongodb";
 import { Member } from "../models/member.model";
 import { MemberRepository } from "../repositories/member.repository";
 import { ApiError } from "../utils/api-error";
+import { CreateMemberData } from "../types/member.types";
 
 export class MemberService {
   constructor(private repo: MemberRepository) {}
@@ -16,8 +17,8 @@ export class MemberService {
     return member;
   }
 
-  async createMember(data: Member) {
-    return await this.repo.create(data);
+  async createMember(newMember: CreateMemberData) {
+    return await this.repo.create(newMember);
   }
 
   async updateMember(id: ObjectId, data: Partial<Member>) {

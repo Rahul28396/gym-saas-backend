@@ -3,6 +3,7 @@ import { Member } from "../models/member.model";
 import { CreateMemberData } from "../types/member.types";
 import { User } from "../models/user.model";
 import { Plan } from "../models/plan.model";
+import logger from "../utils/logger";
 
 export class MemberRepository {
   private membercollection: Collection<Member>;
@@ -39,19 +40,76 @@ export class MemberRepository {
           as: "plan"
         }
       },
-      { $unwind: { path: "$plan", preserveNullAndEmptyArrays: true } },      
+      { $unwind: { path: "$plan", preserveNullAndEmptyArrays: true } },
     ]).toArray();
-
 
     return members;
   }
 
-  async findById(id: ObjectId): Promise<WithId<Member> | null> {
-    return await this.membercollection.findOne({ _id: id });
+  async findById(id: ObjectId): Promise<WithId<any> | null> {
+    try{
+      const member = await this.membercollection.aggregate([
+        {
+          $match: { _id: id }
+        },
+        {
+          $lookup: {
+            from: "users",
+            localField: "userId",
+            foreignField: "_id",
+            as: "user"
+          }
+        },
+        {
+          $lookup: {
+            from: "plans",
+            localField: "planId",
+            foreignField: "_id",
+            as: "plan"
+          }
+        },
+        // {
+        //   $unwind: "$user"
+        // },
+        // {
+        //   $unwind: "$plan"
+        // },
+        {
+          $project: {
+            planStartDate: 1,
+            planExpiryDate: 1,
+            status: 1,
+            userId: 1,
+            planId: 1,
+
+            "user.name": 1,
+            "user.email": 1,
+
+            "plan.name": 1,
+            "plan.price": 1
+          }
+        }
+      ]).toArray();
+
+
+
+      if(!member.length){
+        throw new Error('No user found!!')
+      }
+
+      return member;
+    }catch(err){
+      logger.error(err)
+      throw err;
+    }
   }
 
   async create(data: CreateMemberData): Promise<WithId<Member>> {
     const now = new Date();
+
+    if (!data.email) {
+      throw new Error('Email is missing');
+    }
 
     const existing = await this.userCollection.findOne({ email: data.email });
 
@@ -79,7 +137,7 @@ export class MemberRepository {
 
     const memberData: Member = {
       userId: insertedUser.insertedId,
-      planId: data.planId,
+      planId: new ObjectId(data.planId),
       planStartDate: data.planStartDate,
       planExpiryDate: data.planExpiryDate,
       status: 'active',
