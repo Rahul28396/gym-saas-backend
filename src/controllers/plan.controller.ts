@@ -3,7 +3,7 @@
 import { Request, Response } from "express";
 import { PlanService } from "../services/plan.service";
 import { success } from "../utils/response";
-import { RequestWithObjectId } from "../middleware/validateObjectId.middleware";
+import { RequestWithObjectId } from "../middleware/validate-object-id.middleware";
 
 export class PlanController {
   constructor(private service: PlanService) {}

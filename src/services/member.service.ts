@@ -1,7 +1,7 @@
 import { ObjectId, WithId } from "mongodb";
 import { Member } from "../models/member.model";
 import { MemberRepository } from "../repositories/member.repository";
-import { ApiError } from "../utils/ApiError";
+import { ApiError } from "../utils/api-error";
 
 export class MemberService {
   constructor(private repo: MemberRepository) {}

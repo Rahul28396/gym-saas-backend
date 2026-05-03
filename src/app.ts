@@ -1,27 +1,20 @@
 import express from "express";
 import cors from "cors";
 import { configDotenv } from "dotenv";
-import { errorHandler } from "./utils/errorHandler";
-import { requestLogger } from "./middleware/requestLogger.middleware";
-import logger from "./utils/logger";
+import { errorHandler } from "./utils/error-handler";
+import { requestLogger } from "./middleware/request-logger.middleware";
 
 // Routers
 import { createMembersRouter } from "./routes/member.router";
 import { createPlansRouter } from "./routes/plan.router";
-import { connectToDatabase } from "./config/database";
 import { createAuthRouter } from "./routes/auth.router";
 
 // Middleware
 import { AuthenticationMiddleware } from "./middleware/authentication.middleware";
+import { AppContext } from "./types/app-context.type";
 
-export const createApp = async () => {
+export const createApp = async (context: AppContext) => {
   configDotenv();
-  logger.info("Starting gym-saas backend API...");
-
-  // Connect to MongoDB database
-  logger.info("Connecting to MongoDB...");
-  await connectToDatabase();
-  logger.info("Connected to MongoDB successfully");
 
   const app = express();
 
@@ -44,9 +37,11 @@ export const createApp = async () => {
   app.use(requestLogger);
 
   //use DB-dependent routers
-  app.use("/api/auth", createAuthRouter());
-  app.use("/api/members", AuthenticationMiddleware, createMembersRouter());
-  app.use("/api/plans", AuthenticationMiddleware, createPlansRouter());
+  const { authService } = context.services;
+
+  app.use("/api/auth", createAuthRouter(context));
+  app.use("/api/members", AuthenticationMiddleware(authService), createMembersRouter(context));
+  app.use("/api/plans", AuthenticationMiddleware(authService), createPlansRouter(context));
 
   // Error handler (last)
   app.use(errorHandler);

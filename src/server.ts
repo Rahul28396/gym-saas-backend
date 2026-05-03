@@ -1,16 +1,26 @@
+import { configDotenv } from "dotenv";
 import { createApp } from "./app";
 import { closeDatabaseConnection, connectToDatabase } from "./config/database";
-import logger from "./utils/logger"
-
+import { createAppContext } from "./context/app.context";
+import logger from "./utils/logger";
 
 async function startServer() {
+  configDotenv();
   try {
 
-    const app = await createApp();
+    logger.info("Starting gym-saas backend API...");
+
+    // Connect to MongoDB database
+    logger.info("Connecting to MongoDB...");
+    const database = await connectToDatabase();
+    logger.info("Connected to MongoDB successfully");
+
+    const appContext = createAppContext(database);
+
+    const app = await createApp(appContext);
 
     app.listen(process.env.PORT || 3001, () => {
       logger.info(`Server running on http://localhost:${process.env.PORT || 3001}`);
-      // logger.info(`API documentation available at http://localhost:${process.env.PORT || 3001}/api-docs`);
     });
 
     /**

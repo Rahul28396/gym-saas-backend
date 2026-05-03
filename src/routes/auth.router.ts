@@ -1,26 +1,25 @@
 import { Router } from "express";
-import { getCollection } from "../config/database";
-import { User } from "../models/user.model";
 import AuthController from "../controllers/auth.controller";
-import { AuthRepository } from "../repositories/auth.repository";
-import { AuthService } from "../services/auth.service";
 import { AuthenticationMiddleware } from "../middleware/authentication.middleware";
+import { AppContext } from "../types/app-context.type";
 
-export const createAuthRouter = () => {
-    const router = Router();
+export const createAuthRouter = (context: AppContext) => {
+  const router = Router();
 
-    // Dependency Injection (runs AFTER DB connection)
-    const userCollection = getCollection<User>("users");
+  const { authService } = context.services;
 
-    const authRepository = new AuthRepository(userCollection);
-    const authService = new AuthService(authRepository);
-    const authController = new AuthController(authService);
+  const authController = new AuthController(authService);
 
-    router.post("/login", authController.login);
-    router.post("/register", authController.register);
-    router.post("/logout", AuthenticationMiddleware, authController.logout);
-    // router.post("/refresh-token", authController.refreshToken);
-    router.get("/profile", AuthenticationMiddleware ,authController.getProfile);
+  // inject service into middleware (factory pattern)
+  const authMiddleware = AuthenticationMiddleware(authService);
 
-    return router;
+  router.post("/register", authController.register);
+  router.post("/login", authController.login);
+  router.post('/refresh' , authController.refreshToken );
+
+  router.post("/logout", authMiddleware, authController.logout);
+  router.post("/logout-all", authMiddleware, authController.logoutAll)
+  router.get("/profile", authMiddleware, authController.getProfile);
+
+  return router;
 };

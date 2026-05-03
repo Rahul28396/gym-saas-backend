@@ -1,15 +1,19 @@
-import { ObjectId, WithId, Collection } from "mongodb";
+import { ObjectId, WithId, Collection, Db } from "mongodb";
 import { Member } from "../models/member.model";
 import { CreateMemberData } from "../types/member.types";
 import { User } from "../models/user.model";
 import { Plan } from "../models/plan.model";
 
 export class MemberRepository {
-  constructor(
-    private membercollection: Collection<Member>,
-    private userCollection: Collection<User>,
-    private plansCollection: Collection<Plan>
-  ) { }
+  private membercollection: Collection<Member>;
+  private userCollection: Collection<User>;
+  private plansCollection: Collection<WithId<Plan>>;
+
+  constructor(private db: Db) {
+    this.userCollection = this.db.collection<User>('users');
+    this.plansCollection = this.db.collection<WithId<Plan>>('plans');
+    this.membercollection = this.db.collection<Member>('members');
+  }
 
   async findAll(): Promise<WithId<any>[]> {
     // Implementation for finding all members with user and plan data using aggregate
@@ -68,6 +72,7 @@ export class MemberRepository {
       type: "member",
       createdAt: now,
       updatedAt: now,
+      tokenVersion: 1
     };
 
     const insertedUser = await this.userCollection.insertOne(newUser);

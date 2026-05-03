@@ -2,7 +2,7 @@
 
 import { ObjectId, WithId } from "mongodb";
 import { Plan } from "../models/plan.model";
-import { ApiError } from "../utils/ApiError";
+import { ApiError } from "../utils/api-error";
 import { PlanRepository } from "../repositories/plan.repository";
 
 export class PlanService {

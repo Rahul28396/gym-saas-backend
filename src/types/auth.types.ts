@@ -6,7 +6,8 @@ export type UserType = "admin" | "trainer" | "member";
 export type JWTPayload = {
     id?: ObjectId;
     email?: string;
-    role?: UserType;
+    type?: UserType;
+    tokenVersion: number;
 }
 
 export interface RequestWithUser extends Request {

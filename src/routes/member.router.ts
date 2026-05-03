@@ -1,23 +1,12 @@
 import { Router } from "express";
-import { getCollection } from "../config/database";
-import { MemberRepository } from "../repositories/member.repository";
-import { MemberService } from "../services/member.service";
 import { MemberController } from "../controllers/member.controller";
-import { Member } from "../models/member.model";
-import { validateObjectIdMiddleware as validateObjectId } from "../middleware/validateObjectId.middleware";
-import { User } from "../models/user.model";
-import { Plan } from "../models/plan.model";
+import { validateObjectIdMiddleware as validateObjectId } from "../middleware/validate-object-id.middleware";
+import { AppContext } from "../types/app-context.type";
 
-export const createMembersRouter = (): Router => {
+export const createMembersRouter = (context: AppContext): Router => {
   const router = Router();
 
-  // Dependency Injection (runs AFTER DB connection)
-  const memberCollection = getCollection<Member>("members");
-  const userCollection = getCollection<User>("users");
-  const plansCollection = getCollection<Plan>("plans");
-
-  const memberRepository = new MemberRepository(memberCollection, userCollection, plansCollection);
-  const memberService = new MemberService(memberRepository);
+  const {memberService} = context.services;
   const memberController = new MemberController(memberService);
 
   // Routes

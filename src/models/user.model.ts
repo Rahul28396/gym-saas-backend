@@ -6,6 +6,9 @@ export interface User{
     password: string;
     imageUrl: string;
     type: "admin" | "trainer" | "member";
+    tokenVersion: number,
+
+
     createdAt: Date;
     updatedAt: Date;
 }

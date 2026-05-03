@@ -1,23 +1,25 @@
-// repositories/plan.repository.ts
-
-import { ObjectId, WithId, Collection } from "mongodb";
+import { ObjectId, WithId, Collection, Db } from "mongodb";
 import { Plan } from "../models/plan.model";
 
 export class PlanRepository {
-  constructor(private collection: Collection<Plan>) {}
+  private planCollection: Collection<Plan>;
+
+  constructor(private db: Db) {
+    this.planCollection = this.db.collection<Plan>('plans')
+  }
 
   findAll(): Promise<WithId<Plan>[]> {
-    return this.collection.find({}).toArray();
+    return this.planCollection.find({}).toArray();
   }
 
   findById(id: ObjectId): Promise<WithId<Plan> | null> {
-    return this.collection.findOne({ _id: id });
+    return this.planCollection.findOne({ _id: id });
   }
 
   async create(data: Plan): Promise<WithId<Plan>> {
     const now = new Date();
 
-    const result = await this.collection.insertOne({
+    const result = await this.planCollection.insertOne({
       ...data,
       createdAt: now,
       updatedAt: now,
@@ -33,7 +35,7 @@ export class PlanRepository {
     id: ObjectId,
     data: Partial<Plan>
   ): Promise<WithId<Plan> | null> {
-    return this.collection.findOneAndUpdate(
+    return this.planCollection.findOneAndUpdate(
       { _id: id },
       { $set: { ...data, updatedAt: new Date() } },
       { returnDocument: "after" }
@@ -41,7 +43,7 @@ export class PlanRepository {
   }
 
   async delete(id: ObjectId): Promise<number> {
-    const result = await this.collection.deleteOne({ _id: id });
+    const result = await this.planCollection.deleteOne({ _id: id });
     return result.deletedCount ?? 0;
   }
 }
