@@ -44,8 +44,10 @@ export default class AuthController {
     };
 
     logoutAll = async (req: RequestWithUser, res: Response) => {
-        const { id } = req.user;
-        await this.authService.logoutAll(id);
+        if(!req.user?.id){
+            return res.status(400).json({ message: "User information is missing in the request" });
+        }
+        await this.authService.logoutAll(req.user?.id);
         res.json(createSuccessResponse(null, "Logout from all devices"));
     }
 
