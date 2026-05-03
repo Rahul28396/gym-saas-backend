@@ -6,7 +6,7 @@ import { PlanService } from "../services/plan.service";
 import { PlanController } from "../controllers/plan.controller";
 import { Plan } from "../models/plan.model";
 import { PlanRepository } from "../repositories/plan.repository";
-import { validateObjectIdMiddleware } from "../middleware/validateObjectId";
+import { validateObjectIdMiddleware } from "../middleware/validateObjectId.middleware";
 
 export const createPlansRouter = (): Router => {
 

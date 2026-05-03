@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { MemberService } from "../services/member.service";
 import { success } from "../utils/response";
-import { RequestWithObjectId } from "../middleware/validateObjectId";
+import { RequestWithObjectId } from "../middleware/validateObjectId.middleware";
 
 export class MemberController {
   constructor(private service: MemberService) {}

@@ -4,7 +4,7 @@ import { MemberRepository } from "../repositories/member.repository";
 import { MemberService } from "../services/member.service";
 import { MemberController } from "../controllers/member.controller";
 import { Member } from "../models/member.model";
-import { validateObjectIdMiddleware as validateObjectId } from "../middleware/validateObjectId";
+import { validateObjectIdMiddleware as validateObjectId } from "../middleware/validateObjectId.middleware";
 
 export const createMembersRouter = (): Router => {
   const router = Router();

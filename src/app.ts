@@ -2,13 +2,17 @@ import express from "express";
 import cors from "cors";
 import { configDotenv } from "dotenv";
 import { errorHandler } from "./utils/errorHandler";
-import { requestLogger } from "./middleware/requestLogger";
-import logger from "./utils/logger"
+import { requestLogger } from "./middleware/requestLogger.middleware";
+import logger from "./utils/logger";
 
 // Routers
 import { createMembersRouter } from "./routes/member.router";
 import { createPlansRouter } from "./routes/plan.router";
 import { connectToDatabase } from "./config/database";
+import { createAuthRouter } from "./routes/auth.router";
+
+// Middleware
+import { AuthenticationMiddleware } from "./middleware/authentication.middleware";
 
 export const createApp = async () => {
   configDotenv();
@@ -20,7 +24,7 @@ export const createApp = async () => {
   logger.info("Connected to MongoDB successfully");
 
   const app = express();
-console.log("CORS_ORIGINS:", process.env.CORS_ORIGINS);
+
   const corsOrigins = (process.env.CORS_ORIGINS || "http://localhost:3000")
     .split(",")
     .map((origin) => origin.trim());
@@ -40,8 +44,9 @@ console.log("CORS_ORIGINS:", process.env.CORS_ORIGINS);
   app.use(requestLogger);
 
   //use DB-dependent routers
-  app.use("/api/members", createMembersRouter());
-  app.use("/api/plans", createPlansRouter());
+  app.use("/api/auth", createAuthRouter());
+  app.use("/api/members", AuthenticationMiddleware, createMembersRouter());
+  app.use("/api/plans", AuthenticationMiddleware, createPlansRouter());
 
   // Error handler (last)
   app.use(errorHandler);
