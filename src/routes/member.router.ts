@@ -5,14 +5,18 @@ import { MemberService } from "../services/member.service";
 import { MemberController } from "../controllers/member.controller";
 import { Member } from "../models/member.model";
 import { validateObjectIdMiddleware as validateObjectId } from "../middleware/validateObjectId.middleware";
+import { User } from "../models/user.model";
+import { Plan } from "../models/plan.model";
 
 export const createMembersRouter = (): Router => {
   const router = Router();
 
   // Dependency Injection (runs AFTER DB connection)
   const memberCollection = getCollection<Member>("members");
+  const userCollection = getCollection<User>("users");
+  const plansCollection = getCollection<Plan>("plans");
 
-  const memberRepository = new MemberRepository(memberCollection);
+  const memberRepository = new MemberRepository(memberCollection, userCollection, plansCollection);
   const memberService = new MemberService(memberRepository);
   const memberController = new MemberController(memberService);
 

@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import { AuthRepository } from "../repositories/auth.repository";
 import { User } from "../models/user.model";
 import { JWTPayload } from "../types/auth.types";
-import { ObjectId } from "mongodb";
+import { ObjectId, WithId } from "mongodb";
 
 export class AuthService {
     constructor(private authRepository: AuthRepository) { }
@@ -44,7 +44,7 @@ export class AuthService {
         return { user: safeUser, token };
     }
 
-    async register(newUser: User) {
+    async register(newUser: User): Promise<WithId<User>> {
         // Implement registration logic here
         const existingUser = await this.authRepository.findByEmail(newUser.email);
 
@@ -76,7 +76,7 @@ export class AuthService {
         // Implement token refresh logic here
     }
 
-    async getProfile(email: string): Promise<User | null> {
+    async getProfile(email: string): Promise<WithId<User> | null> {
         // Implement profile retrieval logic here
         const user = await this.authRepository.findByEmail(email);
         return user;

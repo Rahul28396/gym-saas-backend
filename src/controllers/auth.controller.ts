@@ -15,7 +15,6 @@ export default class AuthController {
     };
 
     register = async (req: Request, res: Response) => {
-        console.log("Register request body:", req.body);
         const { name, email, phone, password, imageUrl } = req.body;
         const newUser: User = {
             email,
@@ -42,11 +41,6 @@ export default class AuthController {
     // };
 
     getProfile = async (req: RequestWithUser, res: Response) => {
-        // const { email } = req.user;
-        // const profile = await this.authService.getProfile(email);
-        // res.json(createSuccessResponse(profile, "Profile fetched"));
-        console.log("Get profile request user:", req.user);
-        
         if (!req.user || !req.user.email) {
             return res.status(400).json({ message: "User information is missing in the request" });
         }

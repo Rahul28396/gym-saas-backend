@@ -10,7 +10,7 @@ export const createAuthRouter = () => {
     const router = Router();
 
     // Dependency Injection (runs AFTER DB connection)
-    const userCollection = getCollection<User>("Users");
+    const userCollection = getCollection<User>("users");
 
     const authRepository = new AuthRepository(userCollection);
     const authService = new AuthService(authRepository);
