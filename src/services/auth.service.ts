@@ -60,7 +60,16 @@ export class AuthService {
             createdAt: new Date()
         });
 
-        return { accessToken, refreshToken };
+        const userDetailsToBeShown = {
+            id: user._id.toString(),
+            name: user.name,
+            email: user.email,
+            phone: user.phone,
+            imageUrl: user.imageUrl,
+            role: user.type
+        }
+
+        return { token: accessToken, user: userDetailsToBeShown };
     }
 
     async refreshToken(refreshToken: string) {

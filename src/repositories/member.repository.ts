@@ -41,6 +41,22 @@ export class MemberRepository {
         }
       },
       { $unwind: { path: "$plan", preserveNullAndEmptyArrays: true } },
+      {
+        $project: {
+            planStartDate: 1,
+            planExpiryDate: 1,
+            status: 1,
+            userId: 1,
+            planId: 1,
+
+            "user.name": 1,
+            "user.email": 1,
+            "user.phone": 1,
+
+            "plan.name": 1,
+            "plan.price": 1
+        }
+      }
     ]).toArray();
 
     return members;
@@ -68,12 +84,6 @@ export class MemberRepository {
             as: "plan"
           }
         },
-        // {
-        //   $unwind: "$user"
-        // },
-        // {
-        //   $unwind: "$plan"
-        // },
         {
           $project: {
             planStartDate: 1,
@@ -84,14 +94,13 @@ export class MemberRepository {
 
             "user.name": 1,
             "user.email": 1,
+            "user.phone": 1,
 
             "plan.name": 1,
             "plan.price": 1
           }
         }
       ]).toArray();
-
-
 
       if(!member.length){
         throw new Error('No user found!!')
@@ -125,7 +134,7 @@ export class MemberRepository {
       name: data.name,
       email: data.email,
       phone: data.phone,
-      password: data.password,
+      password: `${data.name}@1234`,
       imageUrl: data.imageUrl,
       type: "member",
       createdAt: now,
