@@ -18,7 +18,7 @@ export const createApp = async (context: AppContext) => {
 
   const app = express();
 
-  const corsOrigins = (process.env.CORS_ORIGINS || "http://localhost:3000")
+  const corsOrigins = (process.env.CORS_ORIGINS || "http://localhost:5173")
     .split(",")
     .map((origin) => origin.trim());
 
