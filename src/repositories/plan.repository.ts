@@ -35,9 +35,12 @@ export class PlanRepository {
     id: ObjectId,
     data: Partial<Plan>
   ): Promise<WithId<Plan> | null> {
+    
+    const { _id, ...restData } = data;
+
     return this.planCollection.findOneAndUpdate(
       { _id: id },
-      { $set: { ...data, updatedAt: new Date() } },
+      { $set: { ...restData, updatedAt: new Date() } },
       { returnDocument: "after" }
     );
   }
