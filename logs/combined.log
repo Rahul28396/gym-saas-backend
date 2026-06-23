@@ -2594,3 +2594,512 @@
 {"level":"http","message":"DELETE /69f8d8e18afae8cdb3b48e0e 200 - 78ms","timestamp":"2026-05-04T19:00:30.769Z"}
 {"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-04T19:00:30.785Z"}
 {"level":"http","message":"GET / 200 - 74ms","timestamp":"2026-05-04T19:00:30.858Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-06T18:56:18.068Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-06T18:56:18.069Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-06T18:56:18.504Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-06T18:56:18.505Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-06T18:56:18.512Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-06T18:56:23.041Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-06T18:56:23.042Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-06T18:56:23.591Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-06T18:56:23.593Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-06T18:56:23.603Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-06T18:59:19.287Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-06T18:59:19.288Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-06T18:59:20.007Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-06T18:59:20.009Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-06T18:59:20.030Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T18:59:26.341Z"}
+{"level":"http","message":"GET / 304 - 5126ms","timestamp":"2026-05-06T18:59:31.467Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T18:59:31.471Z"}
+{"level":"http","message":"GET / 304 - 5101ms","timestamp":"2026-05-06T18:59:36.572Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:00:34.361Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:00:34.384Z"}
+{"level":"http","message":"GET /profile 200 - 330ms","timestamp":"2026-05-06T19:00:34.715Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:00:34.721Z"}
+{"level":"http","message":"GET /profile 200 - 88ms","timestamp":"2026-05-06T19:00:34.809Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-06T19:00:39.059Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-06T19:00:39.059Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-06T19:00:39.517Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-06T19:00:39.518Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-06T19:00:39.524Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:00:39.679Z"}
+{"level":"http","message":"GET / 304 - 89ms","timestamp":"2026-05-06T19:00:39.767Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::ffff:127.0.0.1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:00:51.193Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:00:51.219Z"}
+{"level":"http","message":"GET / 304 - 87ms","timestamp":"2026-05-06T19:00:51.279Z"}
+{"level":"http","message":"GET /profile 200 - 315ms","timestamp":"2026-05-06T19:00:51.533Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:00:51.537Z"}
+{"level":"http","message":"GET /profile 200 - 81ms","timestamp":"2026-05-06T19:00:51.618Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T19:00:54.576Z"}
+{"level":"http","message":"GET / 304 - 86ms","timestamp":"2026-05-06T19:00:54.662Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:00:56.458Z"}
+{"level":"http","message":"GET / 304 - 80ms","timestamp":"2026-05-06T19:00:56.540Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T19:00:58.388Z"}
+{"level":"http","message":"GET / 304 - 88ms","timestamp":"2026-05-06T19:00:58.475Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:01:00.069Z"}
+{"level":"http","message":"GET / 304 - 83ms","timestamp":"2026-05-06T19:01:00.152Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:01:11.272Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:01:11.298Z"}
+{"level":"http","message":"GET / 304 - 108ms","timestamp":"2026-05-06T19:01:11.381Z"}
+{"level":"http","message":"GET /profile 200 - 87ms","timestamp":"2026-05-06T19:01:11.386Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:01:11.388Z"}
+{"level":"http","message":"GET /profile 200 - 86ms","timestamp":"2026-05-06T19:01:11.475Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:01:14.848Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:01:14.852Z"}
+{"level":"http","message":"GET /profile 200 - 89ms","timestamp":"2026-05-06T19:01:14.941Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:01:14.943Z"}
+{"level":"http","message":"GET / 304 - 97ms","timestamp":"2026-05-06T19:01:14.945Z"}
+{"level":"http","message":"GET /profile 200 - 80ms","timestamp":"2026-05-06T19:01:15.023Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T19:01:16.154Z"}
+{"level":"http","message":"GET / 304 - 80ms","timestamp":"2026-05-06T19:01:16.234Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:01:17.944Z"}
+{"level":"http","message":"GET / 304 - 80ms","timestamp":"2026-05-06T19:01:18.025Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:01:30.200Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:01:30.219Z"}
+{"level":"http","message":"GET / 304 - 87ms","timestamp":"2026-05-06T19:01:30.288Z"}
+{"level":"http","message":"GET /profile 200 - 81ms","timestamp":"2026-05-06T19:01:30.300Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:01:30.301Z"}
+{"level":"http","message":"GET /profile 200 - 81ms","timestamp":"2026-05-06T19:01:30.383Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:02:11.275Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:02:11.320Z"}
+{"level":"http","message":"GET / 304 - 84ms","timestamp":"2026-05-06T19:02:11.358Z"}
+{"level":"http","message":"GET /profile 200 - 78ms","timestamp":"2026-05-06T19:02:11.399Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:02:11.401Z"}
+{"level":"http","message":"GET /profile 200 - 73ms","timestamp":"2026-05-06T19:02:11.474Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:02:16.275Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:02:16.344Z"}
+{"level":"http","message":"GET / 304 - 73ms","timestamp":"2026-05-06T19:02:16.347Z"}
+{"level":"http","message":"GET /profile 200 - 80ms","timestamp":"2026-05-06T19:02:16.424Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:02:16.426Z"}
+{"level":"http","message":"GET /profile 200 - 83ms","timestamp":"2026-05-06T19:02:16.509Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T19:02:45.699Z"}
+{"level":"http","message":"GET / 304 - 79ms","timestamp":"2026-05-06T19:02:45.779Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:02:47.062Z"}
+{"level":"http","message":"GET / 304 - 93ms","timestamp":"2026-05-06T19:02:47.155Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:04:25.211Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:04:25.264Z"}
+{"level":"http","message":"GET / 304 - 79ms","timestamp":"2026-05-06T19:04:25.289Z"}
+{"level":"http","message":"GET /profile 200 - 74ms","timestamp":"2026-05-06T19:04:25.338Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:04:25.339Z"}
+{"level":"http","message":"GET /profile 200 - 77ms","timestamp":"2026-05-06T19:04:25.416Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T19:04:37.417Z"}
+{"level":"http","message":"GET / 304 - 78ms","timestamp":"2026-05-06T19:04:37.495Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:04:38.876Z"}
+{"level":"http","message":"GET / 304 - 87ms","timestamp":"2026-05-06T19:04:38.962Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans1","timestamp":"2026-05-06T19:36:48.258Z"}
+{"level":"warn","message":"GET /api/plans1 404 - 6ms","timestamp":"2026-05-06T19:36:48.263Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:36:48.442Z"}
+{"expiredAt":"2026-05-06T19:09:37.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T19:36:48.443Z"}
+{"level":"warn","message":"GET /profile 401 - 1ms","timestamp":"2026-05-06T19:36:48.444Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:36:48.444Z"}
+{"expiredAt":"2026-05-06T19:09:37.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T19:36:48.445Z"}
+{"level":"warn","message":"GET /profile 401 - 1ms","timestamp":"2026-05-06T19:36:48.445Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:44:14.354Z"}
+{"level":"error","message":"undefined","timestamp":"2026-05-06T19:44:14.354Z"}
+{"level":"warn","message":"GET / 401 - 2ms","timestamp":"2026-05-06T19:44:14.355Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-06T19:44:29.430Z"}
+{"level":"http","message":"POST /login 200 - 207ms","timestamp":"2026-05-06T19:44:29.639Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:44:29.693Z"}
+{"level":"http","message":"GET /profile 200 - 75ms","timestamp":"2026-05-06T19:44:29.768Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:44:31.671Z"}
+{"level":"http","message":"GET / 304 - 84ms","timestamp":"2026-05-06T19:44:31.756Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c71","timestamp":"2026-05-06T19:44:34.146Z"}
+{"level":"warn","message":"GET /69f723b4288144b08faf26c71 400 - 44ms","timestamp":"2026-05-06T19:44:34.191Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:57:44.389Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c71","timestamp":"2026-05-06T19:57:44.391Z"}
+{"level":"warn","message":"GET /69f723b4288144b08faf26c71 400 - 43ms","timestamp":"2026-05-06T19:57:44.433Z"}
+{"level":"http","message":"GET / 304 - 87ms","timestamp":"2026-05-06T19:57:44.476Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:57:44.490Z"}
+{"level":"http","message":"GET /profile 200 - 78ms","timestamp":"2026-05-06T19:57:44.568Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:57:44.569Z"}
+{"level":"http","message":"GET /profile 200 - 78ms","timestamp":"2026-05-06T19:57:44.647Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T19:57:53.286Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c71","timestamp":"2026-05-06T19:57:53.287Z"}
+{"level":"warn","message":"GET /69f723b4288144b08faf26c71 400 - 44ms","timestamp":"2026-05-06T19:57:53.332Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:57:53.341Z"}
+{"level":"http","message":"GET / 304 - 83ms","timestamp":"2026-05-06T19:57:53.367Z"}
+{"level":"http","message":"GET /profile 200 - 94ms","timestamp":"2026-05-06T19:57:53.436Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T19:57:53.437Z"}
+{"level":"http","message":"GET /profile 200 - 83ms","timestamp":"2026-05-06T19:57:53.521Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:27:24.524Z"}
+{"expiredAt":"2026-05-06T19:59:29.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:27:24.526Z"}
+{"level":"warn","message":"GET / 401 - 3ms","timestamp":"2026-05-06T20:27:24.527Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c71","timestamp":"2026-05-06T20:27:24.527Z"}
+{"expiredAt":"2026-05-06T19:59:29.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:27:24.528Z"}
+{"level":"warn","message":"GET /69f723b4288144b08faf26c71 401 - 2ms","timestamp":"2026-05-06T20:27:24.529Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:27:24.599Z"}
+{"expiredAt":"2026-05-06T19:59:29.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:27:24.600Z"}
+{"level":"warn","message":"GET /profile 401 - 3ms","timestamp":"2026-05-06T20:27:24.602Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:27:24.609Z"}
+{"expiredAt":"2026-05-06T19:59:29.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:27:24.611Z"}
+{"level":"warn","message":"GET /profile 401 - 3ms","timestamp":"2026-05-06T20:27:24.613Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-06T20:27:26.534Z"}
+{"level":"http","message":"POST /login 200 - 252ms","timestamp":"2026-05-06T20:27:26.786Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:27:26.823Z"}
+{"level":"http","message":"GET /profile 200 - 86ms","timestamp":"2026-05-06T20:27:26.909Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:27:28.949Z"}
+{"level":"http","message":"GET / 304 - 111ms","timestamp":"2026-05-06T20:27:29.060Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:27:32.224Z"}
+{"level":"http","message":"GET / 304 - 117ms","timestamp":"2026-05-06T20:27:32.341Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:27:33.613Z"}
+{"level":"http","message":"GET / 304 - 83ms","timestamp":"2026-05-06T20:27:33.697Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:27:35.120Z"}
+{"level":"http","message":"GET / 304 - 99ms","timestamp":"2026-05-06T20:27:35.218Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:27:37.205Z"}
+{"level":"http","message":"GET / 304 - 84ms","timestamp":"2026-05-06T20:27:37.289Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:27:37.296Z"}
+{"level":"http","message":"GET /profile 200 - 84ms","timestamp":"2026-05-06T20:27:37.379Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:27:37.382Z"}
+{"level":"http","message":"GET /profile 200 - 95ms","timestamp":"2026-05-06T20:27:37.477Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:27:39.302Z"}
+{"level":"http","message":"GET / 304 - 86ms","timestamp":"2026-05-06T20:27:39.389Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:27:42.680Z"}
+{"level":"http","message":"GET / 304 - 87ms","timestamp":"2026-05-06T20:27:42.767Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:27:44.263Z"}
+{"level":"http","message":"GET / 304 - 82ms","timestamp":"2026-05-06T20:27:44.345Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:28:16.376Z"}
+{"level":"http","message":"GET / 304 - 82ms","timestamp":"2026-05-06T20:28:16.458Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:28:17.892Z"}
+{"level":"http","message":"GET / 304 - 85ms","timestamp":"2026-05-06T20:28:17.977Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:28:19.738Z"}
+{"level":"http","message":"GET / 304 - 146ms","timestamp":"2026-05-06T20:28:19.884Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:28:21.601Z"}
+{"level":"http","message":"GET / 304 - 82ms","timestamp":"2026-05-06T20:28:21.682Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:28:23.184Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:28:23.259Z"}
+{"level":"http","message":"GET / 304 - 83ms","timestamp":"2026-05-06T20:28:23.267Z"}
+{"level":"http","message":"GET /profile 200 - 81ms","timestamp":"2026-05-06T20:28:23.339Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:28:23.342Z"}
+{"level":"http","message":"GET /profile 200 - 78ms","timestamp":"2026-05-06T20:28:23.419Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:28:24.964Z"}
+{"level":"http","message":"GET / 304 - 82ms","timestamp":"2026-05-06T20:28:25.046Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:28:26.194Z"}
+{"level":"http","message":"GET / 304 - 82ms","timestamp":"2026-05-06T20:28:26.276Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:31:06.346Z"}
+{"level":"http","message":"GET / 304 - 83ms","timestamp":"2026-05-06T20:31:06.429Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:31:07.777Z"}
+{"level":"http","message":"GET / 304 - 85ms","timestamp":"2026-05-06T20:31:07.861Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:31:09.335Z"}
+{"level":"http","message":"GET / 304 - 85ms","timestamp":"2026-05-06T20:31:09.421Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:43:27.743Z"}
+{"expiredAt":"2026-05-06T20:42:26.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:43:27.745Z"}
+{"level":"warn","message":"GET / 401 - 2ms","timestamp":"2026-05-06T20:43:27.745Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:43:27.774Z"}
+{"expiredAt":"2026-05-06T20:42:26.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:43:27.775Z"}
+{"level":"warn","message":"GET /profile 401 - 2ms","timestamp":"2026-05-06T20:43:27.776Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:43:27.780Z"}
+{"expiredAt":"2026-05-06T20:42:26.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-06T20:43:27.782Z"}
+{"level":"warn","message":"GET /profile 401 - 3ms","timestamp":"2026-05-06T20:43:27.783Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-06T20:44:17.466Z"}
+{"level":"http","message":"POST /login 200 - 590ms","timestamp":"2026-05-06T20:44:18.057Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:44:18.110Z"}
+{"level":"http","message":"GET /profile 200 - 78ms","timestamp":"2026-05-06T20:44:18.187Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:44:20.612Z"}
+{"level":"http","message":"GET / 304 - 82ms","timestamp":"2026-05-06T20:44:20.695Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:44:24.166Z"}
+{"level":"http","message":"GET / 304 - 77ms","timestamp":"2026-05-06T20:44:24.243Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-06T20:44:25.611Z"}
+{"level":"http","message":"GET / 304 - 89ms","timestamp":"2026-05-06T20:44:25.700Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:46:32.903Z"}
+{"level":"http","message":"GET / 304 - 80ms","timestamp":"2026-05-06T20:46:32.982Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-06T20:51:08.256Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:51:08.319Z"}
+{"level":"http","message":"GET /profile 200 - 891ms","timestamp":"2026-05-06T20:51:09.201Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-06T20:51:09.203Z"}
+{"level":"http","message":"GET / 304 - 973ms","timestamp":"2026-05-06T20:51:09.209Z"}
+{"level":"http","message":"GET /profile 200 - 92ms","timestamp":"2026-05-06T20:51:09.296Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-10T06:48:50.734Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-10T06:48:50.735Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-10T06:48:51.460Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-10T06:48:51.461Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-10T06:48:51.485Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-10T06:49:18.757Z"}
+{"expiredAt":"2026-05-06T20:59:17.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-10T06:49:18.762Z"}
+{"level":"warn","message":"GET /profile 401 - 9ms","timestamp":"2026-05-10T06:49:18.766Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-10T06:49:18.769Z"}
+{"expiredAt":"2026-05-06T20:59:17.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-10T06:49:18.770Z"}
+{"level":"warn","message":"GET /profile 401 - 3ms","timestamp":"2026-05-10T06:49:18.771Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-10T06:49:26.704Z"}
+{"level":"http","message":"POST /login 200 - 213ms","timestamp":"2026-05-10T06:49:26.917Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-10T06:49:26.963Z"}
+{"level":"http","message":"GET /profile 200 - 85ms","timestamp":"2026-05-10T06:49:27.048Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-10T06:55:52.435Z"}
+{"level":"http","message":"GET /profile 200 - 82ms","timestamp":"2026-05-10T06:55:52.517Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-10T06:55:52.518Z"}
+{"level":"http","message":"GET /profile 200 - 84ms","timestamp":"2026-05-10T06:55:52.602Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-12T18:16:28.453Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-12T18:16:28.454Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-12T18:16:29.002Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-12T18:16:29.003Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-12T18:16:29.046Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:27:36.793Z"}
+{"expiredAt":"2026-05-10T07:04:26.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-12T18:27:36.802Z"}
+{"level":"warn","message":"GET /profile 401 - 12ms","timestamp":"2026-05-12T18:27:36.805Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:27:36.811Z"}
+{"expiredAt":"2026-05-10T07:04:26.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-12T18:27:36.812Z"}
+{"level":"warn","message":"GET /profile 401 - 2ms","timestamp":"2026-05-12T18:27:36.812Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-12T18:27:42.841Z"}
+{"level":"http","message":"POST /login 200 - 148ms","timestamp":"2026-05-12T18:27:42.989Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:27:43.019Z"}
+{"level":"http","message":"GET /profile 200 - 81ms","timestamp":"2026-05-12T18:27:43.099Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:27:45.065Z"}
+{"level":"http","message":"GET / 304 - 74ms","timestamp":"2026-05-12T18:27:45.139Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:27:51.953Z"}
+{"level":"http","message":"GET / 304 - 72ms","timestamp":"2026-05-12T18:27:52.025Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:28:01.678Z"}
+{"level":"http","message":"GET / 304 - 73ms","timestamp":"2026-05-12T18:28:01.751Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-12T18:28:02.658Z"}
+{"level":"http","message":"GET / 304 - 71ms","timestamp":"2026-05-12T18:28:02.729Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:28:05.153Z"}
+{"level":"http","message":"GET / 304 - 74ms","timestamp":"2026-05-12T18:28:05.226Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-12T18:28:06.336Z"}
+{"level":"http","message":"GET / 304 - 71ms","timestamp":"2026-05-12T18:28:06.406Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:28:43.639Z"}
+{"level":"http","message":"GET / 304 - 78ms","timestamp":"2026-05-12T18:28:43.717Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-12T18:28:50.021Z"}
+{"level":"http","message":"GET / 304 - 71ms","timestamp":"2026-05-12T18:28:50.092Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-12T18:28:58.243Z"}
+{"level":"http","message":"GET / 304 - 71ms","timestamp":"2026-05-12T18:28:58.315Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c7","timestamp":"2026-05-12T18:29:05.669Z"}
+{"level":"http","message":"GET /69f723b4288144b08faf26c7 200 - 78ms","timestamp":"2026-05-12T18:29:05.746Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:29:12.757Z"}
+{"level":"http","message":"GET / 304 - 71ms","timestamp":"2026-05-12T18:29:12.828Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-12T18:29:14.489Z"}
+{"level":"http","message":"GET / 304 - 73ms","timestamp":"2026-05-12T18:29:14.562Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members/69f8d4318afae8cdb3b48e09","timestamp":"2026-05-12T18:29:14.566Z"}
+{"level":"http","message":"GET /69f8d4318afae8cdb3b48e09 200 - 78ms","timestamp":"2026-05-12T18:29:14.645Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:29:20.238Z"}
+{"level":"http","message":"GET / 304 - 73ms","timestamp":"2026-05-12T18:29:20.311Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-12T18:29:27.528Z"}
+{"level":"http","message":"GET / 304 - 76ms","timestamp":"2026-05-12T18:29:27.604Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:36:28.791Z"}
+{"level":"http","message":"GET /profile 200 - 84ms","timestamp":"2026-05-12T18:36:28.874Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:36:28.878Z"}
+{"level":"http","message":"GET /profile 200 - 80ms","timestamp":"2026-05-12T18:36:28.957Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:52:50.627Z"}
+{"expiredAt":"2026-05-12T18:42:42.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-12T18:52:50.629Z"}
+{"level":"warn","message":"GET /profile 401 - 2ms","timestamp":"2026-05-12T18:52:50.630Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-12T18:52:50.631Z"}
+{"expiredAt":"2026-05-12T18:42:42.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-12T18:52:50.632Z"}
+{"level":"warn","message":"GET /profile 401 - 1ms","timestamp":"2026-05-12T18:52:50.633Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-13T19:05:32.459Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-13T19:05:32.461Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-13T19:05:33.174Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-13T19:05:33.175Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-13T19:05:33.185Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-13T19:06:14.896Z"}
+{"level":"http","message":"POST /login 200 - 207ms","timestamp":"2026-05-13T19:06:15.103Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-13T19:06:15.163Z"}
+{"level":"http","message":"GET /profile 200 - 90ms","timestamp":"2026-05-13T19:06:15.253Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-13T19:07:08.626Z"}
+{"level":"http","message":"GET / 304 - 95ms","timestamp":"2026-05-13T19:07:08.722Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:07:12.647Z"}
+{"level":"http","message":"GET / 304 - 87ms","timestamp":"2026-05-13T19:07:12.734Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members/69f8d4318afae8cdb3b48e09","timestamp":"2026-05-13T19:07:12.754Z"}
+{"level":"http","message":"GET /69f8d4318afae8cdb3b48e09 200 - 97ms","timestamp":"2026-05-13T19:07:12.850Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-13T19:07:17.878Z"}
+{"level":"http","message":"GET / 304 - 105ms","timestamp":"2026-05-13T19:07:17.980Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:07:20.132Z"}
+{"level":"http","message":"GET / 304 - 96ms","timestamp":"2026-05-13T19:07:20.227Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members/69f8d4318afae8cdb3b48e09","timestamp":"2026-05-13T19:07:20.241Z"}
+{"level":"http","message":"GET /69f8d4318afae8cdb3b48e09 304 - 100ms","timestamp":"2026-05-13T19:07:20.340Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: PUT /api/members/69f8d4318afae8cdb3b48e09","timestamp":"2026-05-13T19:07:30.210Z"}
+{"level":"http","message":"PUT /69f8d4318afae8cdb3b48e09 200 - 110ms","timestamp":"2026-05-13T19:07:30.319Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:07:30.337Z"}
+{"level":"http","message":"GET / 304 - 93ms","timestamp":"2026-05-13T19:07:30.429Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members/69f8d4318afae8cdb3b48e09","timestamp":"2026-05-13T19:07:30.439Z"}
+{"level":"http","message":"GET /69f8d4318afae8cdb3b48e09 200 - 101ms","timestamp":"2026-05-13T19:07:30.541Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:07:45.038Z"}
+{"level":"http","message":"GET / 304 - 85ms","timestamp":"2026-05-13T19:07:45.122Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c7","timestamp":"2026-05-13T19:07:47.768Z"}
+{"level":"http","message":"GET /69f723b4288144b08faf26c7 200 - 86ms","timestamp":"2026-05-13T19:07:47.855Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c7","timestamp":"2026-05-13T19:07:59.718Z"}
+{"level":"http","message":"GET /69f723b4288144b08faf26c7 304 - 92ms","timestamp":"2026-05-13T19:07:59.809Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: PUT /api/plans/69f723b4288144b08faf26c7","timestamp":"2026-05-13T19:08:02.434Z"}
+{"level":"http","message":"PUT /69f723b4288144b08faf26c7 200 - 97ms","timestamp":"2026-05-13T19:08:02.531Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:08:02.538Z"}
+{"level":"http","message":"GET / 200 - 88ms","timestamp":"2026-05-13T19:08:02.626Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans/69f723b4288144b08faf26c7","timestamp":"2026-05-13T19:08:10.200Z"}
+{"level":"http","message":"GET /69f723b4288144b08faf26c7 200 - 87ms","timestamp":"2026-05-13T19:08:10.288Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: PUT /api/plans/69f723b4288144b08faf26c7","timestamp":"2026-05-13T19:08:14.495Z"}
+{"level":"http","message":"PUT /69f723b4288144b08faf26c7 200 - 97ms","timestamp":"2026-05-13T19:08:14.591Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:08:14.598Z"}
+{"level":"http","message":"GET / 200 - 85ms","timestamp":"2026-05-13T19:08:14.683Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-13T19:23:46.863Z"}
+{"expiredAt":"2026-05-13T19:21:15.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-13T19:23:46.865Z"}
+{"level":"warn","message":"GET / 401 - 3ms","timestamp":"2026-05-13T19:23:46.866Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-16T06:30:56.992Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-16T06:30:56.993Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-16T06:30:57.681Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-16T06:30:57.682Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-16T06:30:57.689Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-16T06:33:18.047Z"}
+{"level":"http","message":"POST /login 200 - 206ms","timestamp":"2026-05-16T06:33:18.253Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-16T06:33:18.323Z"}
+{"level":"http","message":"GET /profile 200 - 91ms","timestamp":"2026-05-16T06:33:18.414Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-16T06:33:21.046Z"}
+{"level":"http","message":"GET / 304 - 94ms","timestamp":"2026-05-16T06:33:21.139Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-16T06:48:27.479Z"}
+{"expiredAt":"2026-05-16T06:48:18.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2026-05-16T06:48:27.481Z"}
+{"level":"warn","message":"GET / 401 - 4ms","timestamp":"2026-05-16T06:48:27.483Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T17:48:37.681Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T17:48:37.683Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T17:48:38.369Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T17:48:38.370Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T17:48:38.388Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-26T17:48:46.995Z"}
+{"level":"http","message":"POST /login 200 - 219ms","timestamp":"2026-05-26T17:48:47.214Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-26T17:48:47.259Z"}
+{"level":"http","message":"GET /profile 200 - 94ms","timestamp":"2026-05-26T17:48:47.352Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-26T17:48:49.603Z"}
+{"level":"http","message":"GET / 200 - 101ms","timestamp":"2026-05-26T17:48:49.704Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/members","timestamp":"2026-05-26T17:48:54.321Z"}
+{"level":"http","message":"GET / 304 - 84ms","timestamp":"2026-05-26T17:48:54.406Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-26T17:48:55.850Z"}
+{"level":"http","message":"GET / 200 - 88ms","timestamp":"2026-05-26T17:48:55.940Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-26T17:51:02.389Z"}
+{"level":"http","message":"GET / 304 - 104ms","timestamp":"2026-05-26T17:51:02.492Z"}
+{"headers":{"content-type":"application/json","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/plans","timestamp":"2026-05-26T17:52:37.124Z"}
+{"level":"http","message":"GET / 304 - 91ms","timestamp":"2026-05-26T17:52:37.215Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-26T17:52:37.238Z"}
+{"level":"http","message":"GET /profile 200 - 94ms","timestamp":"2026-05-26T17:52:37.331Z"}
+{"headers":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"},"ip":"::1","level":"debug","message":"Incoming request: GET /api/auth/profile","timestamp":"2026-05-26T17:52:37.334Z"}
+{"level":"http","message":"GET /profile 200 - 93ms","timestamp":"2026-05-26T17:52:37.427Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:14:22.188Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:14:22.189Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:14:22.819Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:14:22.820Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:14:22.829Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:16:29.427Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:16:29.429Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:16:30.106Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:16:30.107Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:16:30.119Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:17:20.466Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:17:20.467Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:17:21.061Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:17:21.062Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:17:21.075Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:24:36.544Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:24:36.545Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:24:37.052Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:24:37.052Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:24:37.062Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:27:12.495Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:27:12.497Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:27:13.019Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:27:13.019Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:27:13.027Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:27:18.853Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:27:18.854Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:27:19.470Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:27:19.471Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:27:19.481Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:28:00.244Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:28:00.245Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:28:00.728Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:28:12.319Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:28:12.320Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:28:12.856Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:28:12.857Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:28:12.866Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:29:24.795Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:29:24.796Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:29:25.303Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:29:25.303Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:29:25.314Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:30:13.144Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:30:13.145Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:30:13.680Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:30:13.681Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:30:13.688Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:36:03.766Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:36:03.766Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:36:04.310Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:36:04.312Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:36:04.327Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:36:28.993Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:36:28.994Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:36:29.428Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:36:29.429Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:36:29.442Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:37:16.028Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:37:16.028Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:37:16.514Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:37:16.514Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:37:16.527Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:37:27.786Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:37:27.787Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:37:28.235Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:37:28.236Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:37:28.248Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:38:51.288Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:38:51.289Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:38:51.770Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:38:51.771Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:38:51.783Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:38:56.944Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:38:56.945Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:38:57.442Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:38:57.443Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:38:57.455Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:40:27.131Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:40:27.132Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:40:27.639Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:40:27.639Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:40:27.647Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:40:54.143Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:40:54.144Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:40:54.617Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:40:54.618Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:40:54.626Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:41:21.056Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:41:21.057Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:41:21.572Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:41:21.573Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:41:21.589Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:42:45.040Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:42:45.049Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:42:45.677Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:42:45.679Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:42:45.727Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:42:55.077Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:42:55.079Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:42:55.603Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:42:55.604Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:42:55.622Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:43:06.131Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:43:06.132Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:43:06.664Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:43:06.664Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:43:06.675Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:43:24.677Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:43:24.679Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:43:25.149Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:43:25.150Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:43:25.161Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:47:05.167Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:47:05.168Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:47:05.672Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:47:05.672Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:47:05.685Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-05-26T18:57:02.718Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-05-26T18:57:02.720Z"}
+{"level":"debug","message":"Connected to database: gym-saas-db","timestamp":"2026-05-26T18:57:03.309Z"}
+{"level":"info","message":"Connected to MongoDB successfully","timestamp":"2026-05-26T18:57:03.311Z"}
+{"level":"info","message":"Server running on http://localhost:3000","timestamp":"2026-05-26T18:57:03.356Z"}
+{"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.39.1"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/trainers","timestamp":"2026-05-26T19:00:34.727Z"}
+{"level":"error","message":"undefined","timestamp":"2026-05-26T19:00:34.728Z"}
+{"level":"warn","message":"POST / 401 - 6ms","timestamp":"2026-05-26T19:00:34.732Z"}
+{"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.39.1"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/auth/login","timestamp":"2026-05-26T19:00:44.835Z"}
+{"level":"http","message":"POST /login 200 - 370ms","timestamp":"2026-05-26T19:00:45.206Z"}
+{"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.39.1"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/trainers","timestamp":"2026-05-26T19:00:51.350Z"}
+{"level":"error","message":"undefined","timestamp":"2026-05-26T19:00:51.352Z"}
+{"level":"warn","message":"POST / 401 - 4ms","timestamp":"2026-05-26T19:00:51.354Z"}
+{"headers":{"content-type":"application/json","user-agent":"PostmanRuntime/7.39.1"},"ip":"::1","level":"debug","message":"Incoming request: POST /api/trainers","timestamp":"2026-05-26T19:00:53.265Z"}
+{"level":"error","message":"undefined","timestamp":"2026-05-26T19:00:53.266Z"}
+{"level":"warn","message":"POST / 401 - 4ms","timestamp":"2026-05-26T19:00:53.268Z"}
+{"level":"info","message":"Starting gym-saas backend API...","timestamp":"2026-06-23T18:44:58.782Z"}
+{"level":"info","message":"Connecting to MongoDB...","timestamp":"2026-06-23T18:44:58.783Z"}
+{"cause":{"beforeHandshake":false,"errorLabelSet":{}},"errorLabelSet":{},"level":"error","message":"Startup error: 30230000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:916:SSL alert number 80\n","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"ac-pxbjymw-shard-00-00.cqvfiiy.mongodb.net:27017":{"$clusterTime":null,"address":"ac-pxbjymw-shard-00-00.cqvfiiy.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":33319,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-pxbjymw-shard-00-01.cqvfiiy.mongodb.net:27017":{"$clusterTime":null,"address":"ac-pxbjymw-shard-00-01.cqvfiiy.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":33259,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-pxbjymw-shard-00-02.cqvfiiy.mongodb.net:27017":{"$clusterTime":null,"address":"ac-pxbjymw-shard-00-02.cqvfiiy.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":33219,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-hi2rhh-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: 30230000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\\ssl\\record\\rec_layer_s3.c:916:SSL alert number 80\n\n    at Topology.selectServer (D:\\Projects\\gym-saas\\gym-saas-backend\\node_modules\\mongodb\\src\\sdam\\topology.ts:638:30)\n    at async Topology._connect (D:\\Projects\\gym-saas\\gym-saas-backend\\node_modules\\mongodb\\src\\sdam\\topology.ts:466:22)\n    at async Topology.connect (D:\\Projects\\gym-saas\\gym-saas-backend\\node_modules\\mongodb\\src\\sdam\\topology.ts:402:7)\n    at async topologyConnect (D:\\Projects\\gym-saas\\gym-saas-backend\\node_modules\\mongodb\\src\\mongo_client.ts:681:9)\n    at async MongoClient._connect (D:\\Projects\\gym-saas\\gym-saas-backend\\node_modules\\mongodb\\src\\mongo_client.ts:693:7)\n    at async MongoClient.connect (D:\\Projects\\gym-saas\\gym-saas-backend\\node_modules\\mongodb\\src\\mongo_client.ts:605:7)\n    at async _connectToDatabase (D:\\Projects\\gym-saas\\gym-saas-backend\\src\\config\\database.ts:39:5)\n    at async connectToDatabase (D:\\Projects\\gym-saas\\gym-saas-backend\\src\\config\\database.ts:62:10)\n    at async startServer (D:\\Projects\\gym-saas\\gym-saas-backend\\src\\server.ts:15:22)","timestamp":"2026-06-23T18:45:29.035Z"}

@@ -1,15 +1,21 @@
 import { ObjectId, WithId, Collection, Db } from "mongodb";
 import { Plan } from "../models/plan.model";
 
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+
 export class PlanRepository {
   private planCollection: Collection<Plan>;
+
+
 
   constructor(private db: Db) {
     this.planCollection = this.db.collection<Plan>('plans')
   }
 
-  findAll(): Promise<WithId<Plan>[]> {
-    return this.planCollection.find({}).toArray();
+  async findAll(): Promise<WithId<Plan>[]> {
+    // await delay(5000);
+    return await this.planCollection.find({}).toArray();
   }
 
   findById(id: ObjectId): Promise<WithId<Plan> | null> {

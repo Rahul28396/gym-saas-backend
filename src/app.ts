@@ -12,6 +12,7 @@ import { createAuthRouter } from "./routes/auth.router";
 // Middleware
 import { AuthenticationMiddleware } from "./middleware/authentication.middleware";
 import { AppContext } from "./types/app-context.type";
+import { createTrainersRouter } from "./routes/trainer.router";
 
 export const createApp = async (context: AppContext) => {
   configDotenv();
@@ -42,6 +43,7 @@ export const createApp = async (context: AppContext) => {
   app.use("/api/auth", createAuthRouter(context));
   app.use("/api/members", AuthenticationMiddleware(authService), createMembersRouter(context));
   app.use("/api/plans", AuthenticationMiddleware(authService), createPlansRouter(context));
+  app.use("/api/trainers", AuthenticationMiddleware(authService), createTrainersRouter(context));
 
   // Error handler (last)
   app.use(errorHandler);

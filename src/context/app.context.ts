@@ -6,11 +6,13 @@ import { PlanService } from "../services/plan.service";
 import { PlanRepository } from "../repositories/plan.repository";
 import { UserRepository } from "../repositories/user.repository";
 import { RefreshTokenRepository } from "../repositories/refresh-token.repository";
+import { TrainerRepository } from "../repositories/trainer.repository";
 
 export const createAppContext = (db: Db) => {
     const memberRepo = new MemberRepository(db);
     const userRepo = new UserRepository(db);
     const planRepo = new PlanRepository(db);
+    const trainersRepo = new TrainerRepository(db);
     const refreshTokenRepo = new RefreshTokenRepository(db);
 
     const authService = new AuthService(userRepo, refreshTokenRepo);

@@ -7,6 +7,8 @@ export interface CreateMemberData {
     password: string;
     imageUrl: string;
     type: "member";
+
+    // Member-specific fields
     planId: ObjectId;
     planStartDate: string;
     planExpiryDate: string;
