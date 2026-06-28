@@ -48,6 +48,7 @@ export class MemberRepository {
             status: 1,
             userId: 1,
             planId: 1,
+            trainerId: 1,
 
             "user.name": 1,
             "user.email": 1,
@@ -91,6 +92,7 @@ export class MemberRepository {
             status: 1,
             userId: 1,
             planId: 1,
+            trainerId: 1,
 
             "user.name": 1,
             "user.email": 1,
@@ -150,6 +152,7 @@ export class MemberRepository {
       planStartDate: data.planStartDate,
       planExpiryDate: data.planExpiryDate,
       status: 'active',
+      trainerId: data.trainerId ? new ObjectId(data.trainerId as any) : undefined,
       createdAt: now,
       updatedAt: now,
     };
@@ -167,13 +170,33 @@ export class MemberRepository {
     id: ObjectId,
     data: Partial<Member>
   ): Promise<WithId<Member> | null> {
+    const updateOps: any = { $set: { updatedAt: new Date() } };
+
+    if ((data as any).trainerId === null || (data as any).trainerId === '') {
+      updateOps.$unset = { ...(updateOps.$unset || {}), trainerId: '' };
+    } else if ((data as any).trainerId !== undefined) {
+      updateOps.$set = { ...(updateOps.$set || {}), trainerId: new ObjectId((data as any).trainerId) };
+    }
+
+    const otherFields = { ...data } as any;
+    delete otherFields.trainerId;
+    delete otherFields._id;
+
+    if (otherFields.planId && typeof otherFields.planId === 'string') {
+      otherFields.planId = new ObjectId(otherFields.planId);
+    }
+
+    if (Object.keys(otherFields).length) {
+      updateOps.$set = { ...(updateOps.$set || {}), ...otherFields, updatedAt: new Date() };
+    }
+
     const result = await this.membercollection.findOneAndUpdate(
       { _id: id },
-      { $set: { ...data, updatedAt: new Date() } },
-      { returnDocument: "after" }
+      updateOps,
+      { returnDocument: 'after' }
     );
 
-    return result; // ✅ FIXED
+    return result as WithId<Member> | null;
   }
 
   async delete(id: ObjectId): Promise<number> {

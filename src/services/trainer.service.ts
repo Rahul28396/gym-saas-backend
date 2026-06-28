@@ -17,5 +17,17 @@ export class TrainerService {
 
     async createTrainer(newTrainer: CreateTrainerData) {
         return await this.repo.create(newTrainer);
-        }
+    }
+
+    async assignTrainerToMember(trainerId: string, memberId: string) {
+        return await this.repo.assignTrainerToMember(trainerId, memberId);
+    }
+
+    async removeTrainerFromMember(trainerId: string, memberId: string) {
+        return await this.repo.removeTrainerFromMember(trainerId, memberId);
+    }
+
+    async getMembersByTrainer(trainerId: string) {
+        return await this.repo.getMembersByTrainer(trainerId);
+    }
 }

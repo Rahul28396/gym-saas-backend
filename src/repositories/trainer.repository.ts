@@ -2,15 +2,18 @@ import { Collection, Db, ObjectId, WithId } from "mongodb";
 import { Trainer } from "../models/trainer.model";
 import { CreateTrainerData } from "../types/trainer.types";
 import { User } from "../models/user.model";
+import { Member } from "../models/member.model";
 import logger from "../utils/logger";
 
 export class TrainerRepository {
   private trainerCollection: Collection<Trainer>;
   private userCollection: Collection<User>;
+  private membersCollection: Collection<Member>;
 
   constructor(private db: Db) {
     this.trainerCollection = this.db.collection<Trainer>('trainers');
     this.userCollection = this.db.collection<User>('users');
+    this.membersCollection = this.db.collection<Member>('members');
   }
 
   async create(trainer: CreateTrainerData): Promise<WithId<Trainer>> {
@@ -26,14 +29,26 @@ export class TrainerRepository {
       throw new Error("Trainer already exists");
     }
 
+    // provide sensible defaults so frontend can send minimal payload
+    const password = trainer.password || Math.random().toString(36).slice(2, 10);
+    const imageUrl = trainer.imageUrl || '';
+    const type = trainer.type || 'trainer';
+    const salary = trainer.salary ?? 0;
+    const specialization = trainer.specialization || '';
+    const experience = trainer.experience ?? 0;
+    const certifications = trainer.certifications || [];
+    const bio = trainer.bio || '';
+    const availability = trainer.availability || [];
+    const isActive = trainer.isActive ?? true;
+
     // create user document
     const newUser: Omit<User, '_id'> = {
-      name: trainer.name,
+      name: trainer.name || '',
       email: trainer.email,
-      phone: trainer.phone,
-      password: trainer.password,
-      imageUrl: trainer.imageUrl,
-      type: trainer.type,
+      phone: trainer.phone || '',
+      password,
+      imageUrl,
+      type,
       tokenVersion: 0,
       createdAt: now,
       updatedAt: now
@@ -45,13 +60,13 @@ export class TrainerRepository {
     // create trainer document
     const newTrainer: Omit<Trainer, '_id'> = {
       userId,
-      salary: trainer.salary,
-      specialization: trainer.specialization,
-      experience: trainer.experience,
-      certifications: trainer.certifications,
-      bio: trainer.bio,
-      availability: trainer.availability,
-      isActive: trainer.isActive
+      salary,
+      specialization,
+      experience,
+      certifications,
+      bio,
+      availability,
+      isActive
     };
 
     const trainerResult = await this.trainerCollection.insertOne(newTrainer);
@@ -63,40 +78,50 @@ export class TrainerRepository {
   }
 
   async findAll(): Promise<WithId<any>[]> {
-    // Implementation for finding all members with user and plan data using aggregate
-    const members = await this.trainerCollection.aggregate([
-      // Join with Users collection
+    const trainers = await this.trainerCollection.aggregate([
       {
         $lookup: {
-          from: "users",              // target collection
-          localField: "userId",       // field in members
-          foreignField: "_id",        // field in users
-          as: "user"                  // output array field
+          from: "users",
+          localField: "userId",
+          foreignField: "_id",
+          as: "user"
         }
       },
-      // Flatten user array (optional if always one user)
       { $unwind: { path: "$user", preserveNullAndEmptyArrays: true } },
       {
+        $lookup: {
+          from: "members",
+          localField: "_id",
+          foreignField: "trainerId",
+          as: "assignedMembers"
+        }
+      },
+      {
+        $addFields: {
+          memberCount: { $size: { $ifNull: ["$assignedMembers", []] } }
+        }
+      },
+      {
         $project: {
-            userId: 1,
-            salary: 1,
-            specialization: 1,
-            experience: 1,
-            isActive: 1,
-
-            "user.name": 1,
-            "user.email": 1,
-            "user.phone": 1,
+          userId: 1,
+          salary: 1,
+          specialization: 1,
+          experience: 1,
+          isActive: 1,
+          memberCount: 1,
+          "user.name": 1,
+          "user.email": 1,
+          "user.phone": 1
         }
       }
     ]).toArray();
 
-    return members;
+    return trainers;
   }
 
   async findById(id: ObjectId): Promise<WithId<any> | null> {
     try{
-      const member = await this.trainerCollection.aggregate([
+      const trainers = await this.trainerCollection.aggregate([
         {
           $match: { _id: id }
         },
@@ -109,6 +134,22 @@ export class TrainerRepository {
           }
         },
         {
+          $unwind: { path: "$user", preserveNullAndEmptyArrays: true }
+        },
+        {
+          $lookup: {
+            from: "members",
+            localField: "_id",
+            foreignField: "trainerId",
+            as: "assignedMembers"
+          }
+        },
+        {
+          $addFields: {
+            memberCount: { $size: { $ifNull: ["$assignedMembers", []] } }
+          }
+        },
+        {
           $project: {
             salary: 1,
             specialization: 1,
@@ -117,19 +158,19 @@ export class TrainerRepository {
             bio: 1,
             availability: 1,
             userId: 1,
-
+            memberCount: 1,
             "user.name": 1,
             "user.email": 1,
-            "user.phone": 1,
+            "user.phone": 1
           }
         }
       ]).toArray();
 
-      if(!member.length){
-        throw new Error('No user found!!')
+      if(!trainers.length){
+        throw new Error('No trainer found!!')
       }
 
-      return member;
+      return trainers[0];
     }catch(err){
       logger.error(err)
       throw err;
@@ -145,21 +186,32 @@ export class TrainerRepository {
   // }
 
   async assignTrainerToMember(trainerId: string, memberId: string): Promise<void> {
-    // This method would contain logic to associate a trainer with a member.
-    // The actual implementation would depend on how you model the relationship between trainers and members in your database.
-    // For example, you might have a field in the member document that references the trainer's ObjectId.
+    const tId = new ObjectId(trainerId);
+    const mId = new ObjectId(memberId);
+
+    // ensure trainer exists
+    const trainer = await this.trainerCollection.findOne({ _id: tId });
+    if (!trainer) throw new Error('Trainer not found');
+
+    const result = await this.membersCollection.updateOne({ _id: mId }, { $set: { trainerId: tId } });
+    if (result.matchedCount === 0) throw new Error('Member not found');
   }
 
   async removeTrainerFromMember(trainerId: string, memberId: string): Promise<void> {
-    // This method would contain logic to disassociate a trainer from a member.
-    // Similar to the assignTrainerToMember method, the implementation would depend on your data model.
+    const mId = new ObjectId(memberId);
+    await this.membersCollection.updateOne({ _id: mId, trainerId: new ObjectId(trainerId) }, { $unset: { trainerId: "" } });
   }
 
   async getMembersByTrainer(trainerId: string): Promise<any[]> {
-    // This method would contain logic to retrieve all members associated with a specific trainer.
-    // The implementation would depend on how you model the relationship between trainers and members in your database.
-    // For example, you might query the members collection for documents that reference the trainer's ObjectId.
-    return [];
+    const tId = new ObjectId(trainerId);
+    const members = await this.membersCollection.aggregate([
+      { $match: { trainerId: tId } },
+      { $lookup: { from: "users", localField: "userId", foreignField: "_id", as: "user" } },
+      { $unwind: { path: "$user", preserveNullAndEmptyArrays: true } },
+      { $project: { userId: 1, planId: 1, status: 1, planStartDate: 1, planExpiryDate: 1, "user.name": 1, "user.email": 1 } }
+    ]).toArray();
+
+    return members;
   }
 
 }

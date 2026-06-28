@@ -17,13 +17,15 @@ export const createAppContext = (db: Db) => {
 
     const authService = new AuthService(userRepo, refreshTokenRepo);
     const memberService = new MemberService(memberRepo);
-    const planService = new PlanService(planRepo)
+    const planService = new PlanService(planRepo);
+    const trainerService = new (require('../services/trainer.service').TrainerService)(trainersRepo);
 
     return {
         services: {
             authService,
             planService,
-            memberService
+            memberService,
+            trainerService
         }
     };
 };

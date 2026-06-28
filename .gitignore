@@ -1,8 +1,8 @@
 
-./dist
-./build
-./coverage
-./logs
-./tmp
+/dist
+/build
+/coverage
+logs
+/tmp
 
 node_modules

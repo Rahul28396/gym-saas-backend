@@ -13,4 +13,5 @@ export interface CreateMemberData {
     planStartDate: string;
     planExpiryDate: string;
     status: string;
+    trainerId?: string | ObjectId | null;
 }
